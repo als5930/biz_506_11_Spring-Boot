@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<th:block th:include="head"/>
+</head>
+<body>
+<header class="jumbotron bg-warning text-black" >
+	<h2>&#9734; Hello My Home &#9734;</h2>
+	<p>&#9830; 나의 Home에 오신것을 환영합니다 &#9830;</p>
+</header>
+<section>
+
+<h2>thymeleaf 예제</h2>
+<P th:text="${username}">사용자 이름</P>
+<p th:text="${tel}">전화번호</p>
+
+</section>
+<th:block th:include="footer"/>
+
+</body>
+</html>
