@@ -26,8 +26,9 @@ public class HelloController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String hello() {
 
-		return "Hello Spring-boot Web Application";
+		//return "Hello Spring-boot Web Application";
 
+		return "home";
 	}
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)

@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<th:block th:include="header"/>
 <script>
     document.addEventListener("DOMContentLoaded",function(){
         document.querySelector("div.button-box")
@@ -17,7 +12,9 @@
                         document.location.replace(`/book/delete/${id}`)
                     }
                 }
-
+					if(className === "btn-update"){
+						document.location.href=`/book/update/${id}`
+					}
             })
 
     })
@@ -35,5 +32,6 @@
     <button class = "btn-update" th:data-id ="${BOOK.id}">수정</button>
     <button class ="btn-delete" th:data-id ="${BOOK.id}">삭제</button>
 </div>
+
 </body>
-</html>
+
